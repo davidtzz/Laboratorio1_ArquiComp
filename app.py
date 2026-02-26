@@ -4,7 +4,7 @@ import sys
 try:
     import flask
 except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "flask"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install","--user", "flask"])
     import flask
 from flask import Flask, jsonify, request
 from flask import send_from_directory
